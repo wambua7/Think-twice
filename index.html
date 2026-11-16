@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A simple online second hand website " />
     <title>Nguo Yangu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--Hero section-->
     <header>
       <h1>Great Fits Labels</h1>
-      <div class="nav">
         <nav>
-          <ul>
+        <ul class="links">
             <li><a href="#">Home</a></li>
             <li><a href="#about-us">About</a></li>
-            <li><a href="#">Deals</a></li>
+            <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact Us</a></li>
-          </ul>
+        </ul>
         </nav>
-      </div>
     </header>
     <main>
       <section aria-labelledby="about-us">
@@ -41,7 +42,7 @@
         </div>
         <div class="faq">
             <h2>Frequently Asked Questions</h2>
-        </div>
+        <div class="content-container">
          <div class="question">Where's the return Policy?</div>
             <div class="answers">Because each piece in our collection is unique and one-of-a-kind, all sales are generally final. However, we want you to love what you bring into your home if an item arrives damaged in transit or significantly different from its description, we’ll make it right.</div>
         </div>
@@ -52,47 +53,92 @@
         <div class="content-container">
             <div class="question">When will I recieve my order?</div>
             <div class="answers">Delivery time depends on the size of your items and the location combining our preparation time with transit time.Once your order is dispatched, you’ll automatically receive a shipping confirmation with your tracking number and live delivery updates. If you haven't received tracking details after 2 business days, check your spam folder or contact us with your order number.</div>
-        </div>  
+        </div> 
+        </div> 
       </section>
-      <section aria-labelledby="products">
-        <h2>What we are selling today</h2>
-        <div class="items">
-            <h3>Sound bar</h3>
-            <img src="assets/soundbar.jpg" alt="A soundbar">
-            <p>A quality sound bar sytem equipped with stereo speakers and a dedicated noise cancellation </p>
-            <button>Click to add to cart</button>
-        </div>
-        <div class="items">
-            <h3>Television set</h3>
-            <img src="assets/tv.jpg" alt="A 55 inch tv set">
-            <p>A 55inch tv set that displays clear picture quality and pixels</p>
-            <button>Click to add to cart</button>
-        </div>
-        <div class="items">
-            <h3>Washing Machine</h3>
-            <img src="assets/washing-machne.jpg" alt="A washing machine">
-            <p>Ease your work around the house with the all in one washing machine that cleans and dries your clothes in minutes.</p>
-            <button>Click to add to cart</button>
-        </div>
-        <div class="items">
-            <h3>Dining set</h3>
-            <img src="assets/dining.jpeg" alt="A simple dining table">
-            <p>A 6 seater wooden complete dining set handcrafted to perfection.</p>
-            <button>Click to add to cart</button>
-        </div>
-        <div class="items">
-            <h3>Sofa set</h3>
-            <img src="assets/sofa.jpg" alt="A sofa set">
-            <p>A three l-seater sofa set embroidded with top fabric giving your home a perfect finished look. </p>
-            <button>Click to add to cart</button>
-        </div>
-        <div class="items">
-            <h3>Curtains</h3>
-            <img src="assets/curtains.jpeg" alt="A curtain">
-            <p>Top quality that gives a home the privacy it requires and compliments the house to desired finished. </p>
-            <button>Click to add to cart</button> 
-        </div>
-      </section>
+     <section id="products" aria-labelledby="products-heading">
+  <h2 id="products-heading">What we are selling today</h2>
+
+  <div class="products">
+    <!-- Item 1 -->
+    <div class="items">
+      <input type="checkbox" id="item-1" class="card-toggle">
+      <h3>Sound bar</h3>
+      <label for="item-1" class="image-wrapper">
+        <img src="assets/soundbar.jpg" alt="A soundbar">
+      </label>
+      <div class="product-info">
+        <p>A quality sound bar system equipped with stereo speakers and dedicated noise cancellation.</p>
+        <button type="button">Click to add to cart</button>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="items">
+      <input type="checkbox" id="item-2" class="card-toggle">
+      <h3>Television set</h3>
+      <label for="item-2" class="image-wrapper">
+        <img src="assets/tv.jpg" alt="A 55 inch tv set">
+      </label>
+      <div class="product-info">
+        <p>A 55-inch TV set that displays clear picture quality and sharp pixels.</p>
+        <button type="button">Click to add to cart</button>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="items">
+      <input type="checkbox" id="item-3" class="card-toggle">
+      <h3>Washing Machine</h3>
+      <label for="item-3" class="image-wrapper">
+        <img src="assets/washing-machne.jpg" alt="A washing machine">
+      </label>
+      <div class="product-info">
+        <p>Ease your work around the house with the all-in-one washing machine that cleans and dries your clothes in minutes.</p>
+        <button type="button">Click to add to cart</button>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="items">
+      <input type="checkbox" id="item-4" class="card-toggle">
+      <h3>Dining set</h3>
+      <label for="item-4" class="image-wrapper">
+        <img src="assets/dining.jpeg" alt="A simple dining table">
+      </label>
+      <div class="product-info">
+        <p>A 6-seater wooden complete dining set handcrafted to perfection.</p>
+        <button type="button">Click to add to cart</button>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="items">
+      <input type="checkbox" id="item-5" class="card-toggle">
+      <h3>Sofa set</h3>
+      <label for="item-5" class="image-wrapper">
+        <img src="assets/dining.jpeg" alt="A three-seater sofa set">
+      </label>
+      <div class="product-info">
+        <p>A three-seater sofa set embroidered with top fabric giving your home a perfect finished look.</p>
+        <button type="button">Click to add to cart</button>
+      </div>
+    </div>
+
+    <!-- Item 6 -->
+    <div class="items">
+      <input type="checkbox" id="item-6" class="card-toggle">
+      <h3>Curtains</h3>
+      <label for="item-6" class="image-wrapper">
+        <img src="assets/curtains.jpeg" alt="A curtain">
+      </label>
+      <div class="product-info">
+        <p>Top quality curtains that give a home the privacy it requires and complement the house to your desired finish.</p>
+        <button type="button">Click to add to cart</button>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
     <footer>
         <div class="contacts">
